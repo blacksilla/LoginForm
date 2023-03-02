@@ -25,7 +25,7 @@ namespace LoginForm.Controllers
 
         public IActionResult Validation(string email, string password)
         {
-            if(email != null || password != null)
+            if(email != null && password != null)
             {
                 //email:123@123.com - password 123
                 if (email == "123@123.com" && password == "123")
